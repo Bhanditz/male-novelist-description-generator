@@ -6,10 +6,8 @@
     <p class="ml-8 mr-8">Type in your name, and become a realistic and not at all offensive female character in some dude's book</p>
   </header>
     <input class="bg-grey-light m-6 p-2" type="text" v-model="userInput" value="userInput" placeholder="What's your name?">
-    <h3>
     <Sentence :character="userInput" :query="query" :colors="colors">
     </Sentence>
-    </h3>
     <table>
       <tr>
         <th v-for="h in ['A', 'B', 'C', 'D', 'E']" :key="`head-${h}`">
@@ -20,7 +18,7 @@
         <td v-for="col in ['A', 'B', 'C', 'D', 'E']" :key="`row-${index}-col-${col}`">
           <TableCell :row-data="row" :column-key="col" :query="query" :colors="colors"></TableCell>
         </td>
-      </tr> 
+      </tr>
     </table>
     <footer class="flex justify-around p-4">
       <span>Made by <a href="https://twitter.com/pj_trainor">PJ Trainor</a></span>

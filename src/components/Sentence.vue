@@ -1,14 +1,14 @@
 <template>
-  <div class="flex flex-col justify-around mt-6 mb-6 leading-loose">
-    <div class="ml-6 self-start font-normal italic text-grey">
-    {{character}}
-    </div> 
-    <div>
+  <div class="flex flex-col content-center w-1/3 m-auto leading-loose">
+    <div class="self-start font-normal italic text-grey">
+    On {{character ? character : 'the not at all offensive female character'}}:
+    </div>
+    <div class="text-lg font-bold">
     She had
     <span :class="getStyle('A')">
       {{fillWord('A')}}
     </span>
-    like 
+    like
     <span :class="getStyle('B')">
       {{fillWord('B')}}
     </span>
@@ -16,17 +16,17 @@
     <span :class="getStyle('C')">
       {{fillWord('C')}}
     </span>
-    and I 
+    and I
     <span :class="getStyle('D')">
       {{fillWord('D')}}
     </span>
-    to 
+    to
     <span :class="getStyle('E')">
       {{fillWord('E')}}
     </span>
     her
     </div>
-    <div class="mr-6 self-end font-normal italic text-grey">
+    <div class="self-end font-normal italic text-grey">
     &mdash; Some Dude
     </div>
   </div>
@@ -43,7 +43,7 @@ export default {
     },
     getStyle(key) {
       const color = this.colors[key];
-      return `pl-1 mr-1  bg-${color}-light `;
+      return `pl-1 mr-1 bg-${color}-light `;
     }
   }
 };
