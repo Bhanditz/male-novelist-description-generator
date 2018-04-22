@@ -1,7 +1,10 @@
 <template>
-  <div :class="`flex justify-between p-1 ${styleOnMatch}`">
+  <div :class="`flex md:justify-between text-xs md:text-base ${styleOnMatch}`">
     <div class="text-left">
       {{rowData.alpha}}
+    </div>
+    <div class="md:invisible">
+      &ndash;
     </div>
     <div class="text-right">
       {{rowData[columnKey]}}

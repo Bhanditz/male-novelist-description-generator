@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col content-center w-1/3 m-auto leading-loose">
+  <div class="flex flex-col content-center text-center leading-loose break-normal">
     <div class="self-start font-normal italic text-grey">
     On {{character ? character : 'the not at all offensive female character'}}:
     </div>
