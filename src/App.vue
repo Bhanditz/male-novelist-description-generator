@@ -5,7 +5,7 @@
     <h2 class="mb-2">by Electric Literature</h2>
     <p class="ml-8 mr-8">Type in your name, and become a realistic and not at all offensive female character in some dude's book</p>
   </header>
-    <input class="bg-grey-light m-6 p-2" type="text" v-model="userInput" value="userInput" placeholder="What's your name?">
+    <input class="bg-grey-light w-1/3 m-6 p-2 self-center" type="text" v-model="userInput" value="userInput" placeholder="What's your name?">
     <Sentence :character="userInput" :query="query" :colors="colors">
     </Sentence>
     <table>

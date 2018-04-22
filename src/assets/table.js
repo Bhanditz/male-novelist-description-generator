@@ -60,7 +60,7 @@ const [, ...body] = list.split("\n");
 const table = body.map((d, i) => {
   const words = d.split(",");
 
-  let [A, B, C, D, E] = words;
+  const [A, B, C, D, E] = words;
 
   return {
     alpha: alphabet[i],
